@@ -1,11 +1,10 @@
 // start of wrapper (I will explain how this works later)
-(async () => {
+async function start() {
 	// your code goes here! below this line
 
-	let num = Math.random() * 100 + 1;
-	num = Math.floor(num);
-
+	let num = round(random(1, 100));
 	let guess;
+
 	while (guess != num) {
 		guess = await prompt('guess a number 1 to 100');
 		if (guess == num) {
@@ -18,4 +17,4 @@
 	}
 
 	exit(); // this function exits the game
-})(); // end
+} // end
