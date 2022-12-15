@@ -5,14 +5,22 @@ async function start() {
 	let num = round(random(1, 100));
 	let guess;
 
-	while (guess != num) {
+	for (let guessCount = 7; guess != num; guessCount--) {
 		guess = await prompt('guess a number 1 to 100');
-		if (guess == num) {
-			await alert('Correct');
+		if (guess > 100 || guess <= 0) {
+			await alert('invalid guess...');
+			guessCount++;
 		} else if (guess > num) {
 			await alert('Your guess is too high');
 		} else if (guess < num) {
 			await alert('your guess is too low');
+		} else {
+			await alert('Correct');
+		}
+
+		if (guessCount == 0) {
+			await alert('You ran out of guesses');
+			break;
 		}
 	}
 
