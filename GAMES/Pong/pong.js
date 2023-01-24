@@ -40,12 +40,12 @@ ball.velocity.y = 1.5;
 let paddleL = createSprite(imgPaddle);
 paddleL.x = 5;
 paddleL.y = 5;
-paddleL.immovable = true;
+paddleL.static = true;
 
 let paddleR = createSprite(imgPaddle);
 paddleR.x = 242;
 paddleR.y = 5;
-paddleR.immovable = true;
+paddleR.static = true;
 
 let scoreL = 0;
 let scoreR = 0;

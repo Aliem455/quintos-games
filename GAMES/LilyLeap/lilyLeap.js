@@ -42,7 +42,7 @@ function setup() {
 
 function makeLilyPads() {
 	/* Part A: Use a loop to make more lily pads. */
-	for (let i = 0; i < 50; i++) {
+	for (let i = 0; i < 1000; i++) {
 		let lily = new lilypads.Sprite();
 		lily.ani.frame = round(random(0, 11));
 		lily.ani.frameDelay = round(random(80, 120));
