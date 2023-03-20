@@ -25,7 +25,7 @@ async function instructions() {
 }
 async function gameOver() {
 	erase();
-	text(target, targetRow, targetCol);
+	txt(target, targetRow, targetCol);
 	await delay(2000);
 	await alert('GAME OVER', 10, 27, 30);
 	erase();
