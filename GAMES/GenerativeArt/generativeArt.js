@@ -1,5 +1,5 @@
 let time = 0;
-let art = 9;
+let art = 4;
 
 function draw() {
 	translate(width * 0.5, height * 0.5);
@@ -40,10 +40,12 @@ function draw() {
 	if (kb.presses('left')) {
 		background(0);
 		art--;
+		if (art < 0) art = 9;
 	}
 	if (kb.presses('right')) {
 		background(0);
 		art++;
+		if (art > 9) art = 0;
 	}
 }
 
