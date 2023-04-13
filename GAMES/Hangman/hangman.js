@@ -114,6 +114,8 @@ async function start() {
 		}
 		let isCorrect = false;
 
+		// loop goes through each letter in the word
+		// starting with the first letter and ending with the last
 		for (let i = 0; i < word.length; i++) {
 			log(word[i]);
 			let letter = word[i];
