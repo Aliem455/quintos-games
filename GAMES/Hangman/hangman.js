@@ -112,6 +112,7 @@ async function start() {
 		if (guess == word) {
 			break;
 		}
+
 		let isCorrect = false;
 
 		// loop goes through each letter in the word
